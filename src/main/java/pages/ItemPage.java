@@ -26,13 +26,4 @@ public class ItemPage {
         return itemPrice.text();
     }
 
-    public ItemPage addToCart() {
-        addToCart.scrollIntoView(false).click();
-        return this;
-    }
-
-    public CartPage openCart() {
-        cart.scrollIntoView(false).click();
-        return page(CartPage.class);
-    }
 }
